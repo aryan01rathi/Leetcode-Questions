@@ -162,17 +162,17 @@ bool aharshadNumber(int n){
 
 int main()
 {
-    // Node *node1 = new Node(10);
-    // Node *head = node1;
-    // Node *tail = node1;
-    // insertatTail(tail, 20);
-    // insertatTail(tail, 30);
-    // insertatTail(tail, 40);
-    // insertatTail(tail, -50);
-    // print(head);
-    // // printMiddleElement(head);
-    // deletingAlternateNode(head);
-    // print(head);
+    Node *node1 = new Node(10);
+    Node *head = node1;
+    Node *tail = node1;
+    insertatTail(tail, 20);
+    insertatTail(tail, 30);
+    insertatTail(tail, 40);
+    insertatTail(tail, -50);
+    print(head);
+    // printMiddleElement(head);
+    deletingAlternateNode(head);
+    print(head);
 
     cout<<aharshadNumber(156);
 
