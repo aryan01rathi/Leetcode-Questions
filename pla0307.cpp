@@ -64,12 +64,25 @@ void findOneFourNine(int lower, int upper){
     cout<<count;
     // TC O((upper-lower+1)logn)
 }
+void leaderInArray(vector<int>v){
+    vector<int>ans;
+    int leader=INT_MIN;
+    for(int i=v.size()-1;i>0;i--){
+        if(v[i]>leader){
+            ans.push_back(v[i]);
+            leader=v[i];
+        }
+    }
+    for(auto it:ans){
+        cout<<it<<" ";
+    }
+}
 
 int main()
 {
-   swapNibbles(50);
-   findOneFourNine(1,10);
+//    swapNibbles(50);
+//    findOneFourNine(1,10);
 
-//    vector<int>v={16,17,4,3,5,2};
-//    leaderInArray(v);
+   vector<int>v={16,17,4,3,5,2};
+   leaderInArray(v);
 }
