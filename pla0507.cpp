@@ -65,7 +65,31 @@ void sumKSub(vector<int>v, int k){
         }
     }
 }
-
+void checkBinaryPalindrome(int n){
+    vector<int>v;
+    while(n!=0){
+        int rem=n%2;
+        v.push_back(rem);
+        n/=2;
+    }
+    
+    reverse(v.begin(),v.end());
+    
+    bool check=0;
+    int l=0;
+    int r=v.size()-1;
+    while(l<=r){
+        cout<<v[l]<<" "<<v[r]<<endl;
+        if(v[l]!=v[r]){
+           check=1;
+            break; 
+        }
+        l++;
+        r--;
+    }
+    if(check==1)cout<<"Not palindrome";
+    else cout<<"Palindrome";
+}
 
 int main()
 {
@@ -74,7 +98,7 @@ int main()
     
     // kelementsCloser(v,4,3); //{2,4,7,9,10}
 
-    sumKSub(v,4);
+    //sumKSub(v,4);
 
-    
+    checkBinaryPalindrome(9);
 }
