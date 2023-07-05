@@ -41,7 +41,30 @@ void kelementsCloser(vector<int>v,int k, int x){
     }
 }
 
+void sumKSub(vector<int>v, int k){
+    int l=0;
+    int r=0;
+    map<int,int>mp;
+    int sum=0;
+    for(int i=0;i<v.size();i++){
+        sum=0;
+        for(int j=i;j<v.size();j++){
+            sum+=v[j];
+            mp[sum]++;
+        }
+    }
 
+    
+    for(auto it: mp){
+        cout<<it.first<<" "<<it.second<<endl;
+    }
+    cout<<"Answer is "<<endl;
+    for(auto it: mp){
+        if(it.second>=k){
+            cout<<it.first<<endl;
+        }
+    }
+}
 
 
 int main()
@@ -49,9 +72,9 @@ int main()
     vector<int> v = {5,3,2,4,2,1};
     //leaderInArray(v);
     
-    kelementsCloser(v,4,3); //{2,4,7,9,10}
+    // kelementsCloser(v,4,3); //{2,4,7,9,10}
 
-  
+    sumKSub(v,4);
 
     
 }
