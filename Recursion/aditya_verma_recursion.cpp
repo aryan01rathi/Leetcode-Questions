@@ -100,10 +100,22 @@ int kthSymbol(int n, int k){
         return !kthSymbol(n-1,k-mid);
     }
 }
+
+void toh(int n, char ts, char td, char th){
+    if(n==0){return;}// base condition
+    // moving n-1 disks from s to h using d, hypothesis on smaller n
+    toh(n-1,ts,th,td);
+    //moving nth from s to d, Induction step
+    cout<<n<<" from ts to td "<<endl;
+    // moving those n-1 from h to d using s
+    toh(n-1,th,td,ts);
+}
 int main()
 {   
+     toh(3,'a','b','c');
 
-    cout<<kthSymbol(2,2);
+    //cout<<kthSymbol(2,2);
+    
     // int n;
     // cin>>n;
     // int sum=0;
