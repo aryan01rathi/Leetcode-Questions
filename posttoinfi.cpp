@@ -11,7 +11,7 @@ bool ischar(char ch){
         return true;
     }
     return false;
-}L
+}
 
 string post_to_infi(string str){
 
