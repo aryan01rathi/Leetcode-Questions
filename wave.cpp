@@ -18,7 +18,7 @@ void solve()
     //     for (int j = 0; j < m; j++)
     //         cout<<arr[i][j];
     // }
-  //  vector<int>ans;
+    vector<int>ans;
     
   int i=0;
     for (int j = 0; j < 4; j++)
