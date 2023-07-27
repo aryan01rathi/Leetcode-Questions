@@ -59,27 +59,27 @@ int lastocc(int arr[], int size, int key)
 int main()
 {
 
-    int start = 0;
-    int end = size - 1;
-    int mid = start + (end - start) / 2;
-    while (start <= end)
-    {
-        if (arr[mid] > arr[mid + 1] && arr[mid] > arr[mid - 1])
-        {
-            ans = mid;
-        }
-        else if (arr[mid] > arr[mid + 1])
-        {
-            end = mid - 1;
-        }
-        else if (arr[mid] < arr[mid + 1])
-        {
-            start = mid + 1;
-        }
-        mid = start + (end - start) / 2;
-    }
+    // int start = 0;
+    // int end = size - 1;
+    // int mid = start + (end - start) / 2;
+    // while (start <= end)
+    // {
+    //     if (arr[mid] > arr[mid + 1] && arr[mid] > arr[mid - 1])
+    //     {
+    //         ans = mid;
+    //     }
+    //     else if (arr[mid] > arr[mid + 1])
+    //     {
+    //         end = mid - 1;
+    //     }
+    //     else if (arr[mid] < arr[mid + 1])
+    //     {
+    //         start = mid + 1;
+    //     }
+    //     mid = start + (end - start) / 2;
+    // }
 
-    return ans;
+    // return ans;
 
     int arr[10] = {1, 2, 3, 3, 3, 3, 3, 4, 5, 6};
     cout << firstocc(arr, 10, 3) << " " << lastocc(arr, 10, 3);
