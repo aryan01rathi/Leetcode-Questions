@@ -15,7 +15,7 @@ void solve()
     int temp1;
     int temp2;
     int k=1;
-    while (count < end)
+    while (count < endcol)
     {
         for (int i = startcol; i <= endcol; i++)
         {  temp1=ans[i+k][row];
@@ -26,19 +26,19 @@ void solve()
         startrow++;//srow=1 and scol=0 endcol=n endrow=n
         for (int i = startrow; i <= endrow; i++)
         {
-            ans.pushback(arr[i][endcol]); //endcol
+            ans.pushback(ans[i][endcol]); //endcol
             count++;
         }
         endcol--;//srow=1 scol=0 endcol=n-1 endrow=n
         for (int i = endcol; i >= startcol; i--)
         {
-            ans.pushback(arr[endrow]][i]);//endrow
+            ans.pushback(ans[endrow][i]);//endrow
             count++;
         }
         endrow--;
         for (int i = endrow; i >=startrow; i--)
         {
-            ans.pushback(arr[i][startcol]);//firstcol
+            ans.pushback(ans[i][startcol]);//firstcol
             count++;
         }
         startcol++;
