@@ -144,8 +144,8 @@ int main()
 {
 
 
-     ListNode *head = NULL;
-     insertattail(head, 1);
+    ListNode *head = NULL;
+    insertattail(head, 1);
     // // insertattail(head,0);
     // // insertattail(head,1);
     // display(head);
