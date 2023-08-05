@@ -146,9 +146,9 @@ int main()
 
     ListNode *head = NULL;
     insertattail(head, 1);
-    // // insertattail(head,0);
-    // // insertattail(head,1);
-    // display(head);
-    // //getDecimalValue(head);
+    insertattail(head,0);
+    insertattail(head,1);
+    display(head);
+    getDecimalValue(head);
 }
  
