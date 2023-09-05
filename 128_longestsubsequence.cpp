@@ -33,5 +33,4 @@ int main() {
   vector<int> arr{100,200,1,2,3,4};
   int lon = longestConsecutive(arr);
   cout << "The longest consecutive sequence is " << lon << endl;
-
 }
