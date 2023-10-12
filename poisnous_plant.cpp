@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// sac suxx
 // int poisnousPlant(vector<int> &arr)
 // {
 //     // int len = arr.size();
