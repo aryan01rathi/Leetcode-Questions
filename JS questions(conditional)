@@ -1,0 +1,106 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+// var x= prompt("enter the value of x ");
+// if(x>=10){
+//     console.log("x is greater than 10");
+// }
+// else 
+// console.log("x is smaller than 10")
+
+
+// var age=prompt("enter user age ");
+// if(age>=18){
+//     console.log("You can drive")
+// }else{
+//     console.log("You can't drive")
+// }
+
+
+// var marks=prompt("enter user marks: ")
+// if(marks>=90 && marks<=100){
+//     console.log("Pass")
+// }else console.log("Fail")
+
+
+// var time=parseInt(prompt("enter time in 24hr format: "))
+// if(time>0 && time<=12){
+//     console.log("Good morning")
+// }else if(time>12 && time<16){
+//     console.log("Good afternoon")
+// }else console.log("Good night")
+
+
+//var num=prompt("Enter the number: ")
+// switch(num){
+//     case '0':
+//         console.log("Monday")
+//         break;
+//     case 1:
+//         console.log("Tuesday")
+//         break;
+//     default:
+//     console.log("wrong Number")
+// }
+
+// var number=parseInt(prompt("enter the Number: "));
+// switch(number){
+//     case 0:
+//         console.log("Mango")
+//         break;
+//     case 1:
+//         console.log("Apple")
+//         break;
+//     case 2:
+//         console.log("Orange")
+//         break;
+//     default:
+//         console.log("Wrong Number!!!!!!!!!!!!!!")
+//         break;
+// }
+
+
+// var temp=prompt("enter the number: ")
+// if(temp<15)console.log("low ")
+// else if(temp>15 && temp<30 )console.log("Medium")
+// else console.log("high")
+
+
+// function isEvenOrOdd(n){
+//     if(n%2==0){
+//         return "Even"
+//     }
+//     else return "Odd"
+// }
+
+// function isPosOrNeg( n){
+//     if(n<0) return "negative"
+//     else return "Positive"
+// }
+
+// var num=prompt("enter the number: ")
+// console.log(isEvenOrOdd(num))
+// console.log(isPosOrNeg(num));
+
+
+// var username=prompt("Enter your username: ")
+// var len=username.length
+// if(len<6)console.log("Username too short")
+// else if(len>=6 && len<=12 )console.log("Username accepted")
+// else console.log("Username too long")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
